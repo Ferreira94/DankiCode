@@ -20,6 +20,46 @@ header {
   border-bottom: 0.1rem solid #5f358f;
 }
 
+section.nav-bar-mobile {
+  border-bottom: 0.1rem solid #5f358f;
+  display: none;
+}
+
+section.nav-bar-mobile i {
+  margin: 0.2rem 0 0 0.2rem;
+  color: #5f358f;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#display-none {
+  display: none;
+}
+
+section.nav-bar-mobile ul {
+  position: absolute;
+	z-index: 999;
+	left: 0;
+  background-color: rgba(95, 53, 143, 0.8);
+  text-align: center;
+  min-width: 40%;
+  min-height: 15rem;
+}
+
+section.nav-bar-mobile li {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+section.nav-bar-mobile .nav-bar-single .tecnologias {
+  margin-left: 1rem;
+  display: none;
+}
+
+section.nav-bar-mobile li:hover .tecnologias {
+  display: block;
+}
+
 section.nav-bar {
   background-color: #36cae0;
 }
@@ -62,7 +102,7 @@ section.nav-bar ul li .tecnologias p {
   margin-bottom: 0.2rem;
 }
 
-section.nav-bar ul li .tecnologias a {
+section.nav-bar ul li .tecnologias a, section.nav-bar-mobile ul li .tecnologias a {
   color: white;
   text-decoration: none;
   background-color: #36cae0;
@@ -129,6 +169,24 @@ footer .direitos-responsivo {
   display: none;
 }
 
+@media screen and (max-width: 930px) {
+  section.nav-bar {
+    display: none;
+  }
+
+  section.nav-bar-mobile {
+    display: block;
+  }
+
+  section.nav-bar-mobile h2 {
+    font-size: 1rem;
+  }
+
+  section.nav-bar-mobile strong, section.nav-bar-mobile p, section.nav-bar-mobile a {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 640px) {
   footer .direitos {
     display: none;
@@ -140,6 +198,16 @@ footer .direitos-responsivo {
 
   footer .direitos-responsivo {
     display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.text h2 {
+    font-size: 1.4rem;
+  }
+
+  section.container p {
+    font-size: 0.5rem;
   }
 }
 
