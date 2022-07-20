@@ -1,11 +1,12 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
-body, html {
+body,
+html {
   background-color: #222;
   color: white;
   font-size: 20px;
@@ -38,8 +39,8 @@ section.nav-bar-mobile i {
 
 section.nav-bar-mobile ul {
   position: absolute;
-	z-index: 999;
-	left: 0;
+  z-index: 999;
+  left: 0;
   background-color: rgba(95, 53, 143, 0.8);
   text-align: center;
   min-width: 40%;
@@ -75,7 +76,7 @@ section.nav-bar ul li {
   height: 1.5rem;
 }
 
-section.nav-bar .nav-bar-single{
+section.nav-bar .nav-bar-single {
   width: 16.6%;
   text-align: center;
 }
@@ -102,7 +103,8 @@ section.nav-bar ul li .tecnologias p {
   margin-bottom: 0.2rem;
 }
 
-section.nav-bar ul li .tecnologias a, section.nav-bar-mobile ul li .tecnologias a {
+section.nav-bar ul li .tecnologias a,
+section.nav-bar-mobile ul li .tecnologias a {
   color: white;
   text-decoration: none;
   background-color: #36cae0;
@@ -122,14 +124,16 @@ section.text h2 {
 
 section.container {
   display: flex;
-  align-content: space-between;
-  margin-top: 2rem;
-  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 section.container .single-project {
-  max-width: 33.3%;
+  width: 300px;
   padding: 0 2rem;
+  text-align: center;
 }
 
 .container img {
@@ -182,7 +186,9 @@ footer .direitos-responsivo {
     font-size: 1rem;
   }
 
-  section.nav-bar-mobile strong, section.nav-bar-mobile p, section.nav-bar-mobile a {
+  section.nav-bar-mobile strong,
+  section.nav-bar-mobile p,
+  section.nav-bar-mobile a {
     font-size: 0.8rem;
   }
 }
@@ -205,9 +211,4 @@ footer .direitos-responsivo {
   section.text h2 {
     font-size: 1.4rem;
   }
-
-  section.container p {
-    font-size: 0.5rem;
-  }
 }
-
